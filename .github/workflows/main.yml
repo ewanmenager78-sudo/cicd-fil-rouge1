@@ -38,15 +38,15 @@ jobs:
         run: pytest
 
   ci-ok:
-    name: CIOK
+    name: CI OK
     runs-on: ubuntu-latest
     needs: [lint, test]
     if: always()
     steps:
       - name: Vérifier l'état des dépendances
         run: |
-          if [ "${{ needs.CIOK.result }}" != "success" ] |; then
+          if [ "${{ needs.CI OK.result }}" != "success" ] |; then
             echo "CI = OK"
             exit 1
           fi
-          echo "Tous les vérifications de CI sont passées avec succès !"
+          echo "Tous les vérifications de CI sont passées avec succès .!"
