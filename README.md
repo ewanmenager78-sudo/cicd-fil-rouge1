@@ -66,8 +66,11 @@ docker run --rm -p 8000:8000 taskflow
 <!-- Lab J1 : listez les règles activées sur main, pourquoi chacune, et ajoutez la capture du push refusé -->
 ![Push direct refusé sur main](docs/PushMainNO.png) 
 
-RulesSets: 
+Rules_Sets: 
 
 - Restrict deletions
 - Require a pull resquest before merging
 - block force pushes
+
+Ajout du
+- Require check status lint and test
